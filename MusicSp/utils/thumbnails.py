@@ -107,6 +107,26 @@ def draw_text_with_shadow(background, draw, position, text, font, fill, shadow_o
     
     draw.text(position, text, font=font, fill=fill)
 
+def make_rounded_rectangle(img, output_width, output_height, border, border_color, corner_radius=20):
+    inner_w = output_width - 2 * border
+    inner_h = output_height - 2 * border
+    img = img.resize((inner_w, inner_h))
+    
+    final_img = Image.new("RGBA", (output_width, output_height), border_color)
+    
+    mask_inner = Image.new("L", (inner_w, inner_h), 0)
+    draw_inner = ImageDraw.Draw(mask_inner)
+    draw_inner.rounded_rectangle((0, 0, inner_w, inner_h), radius=corner_radius, fill=255)
+    
+    final_img.paste(img, (border, border), mask_inner)
+    
+    mask_final = Image.new("L", (output_width, output_height), 0)
+    draw_final = ImageDraw.Draw(mask_final)
+    draw_final.rounded_rectangle((0, 0, output_width, output_height), radius=corner_radius, fill=255)
+    
+    result = Image.composite(final_img, Image.new("RGBA", final_img.size, (0, 0, 0, 0)), mask_final)
+    return result
+
 async def gen_thumb(videoid: str):
     try:
         if os.path.isfile(f"cache/{videoid}_v4.png"):
@@ -186,10 +206,9 @@ async def gen_thumb(videoid: str):
         title_font = ImageFont.truetype("MusicSp/assets/font3.ttf", 45)
 
 
-        circle_thumbnail = crop_center_circle(youtube, 400, 20, start_gradient_color)
-        circle_thumbnail = circle_thumbnail.resize((400, 400))
-        circle_position = (120, 160)
-        background.paste(circle_thumbnail, circle_position, circle_thumbnail)
+        rect_thumbnail = make_rounded_rectangle(youtube, 480, 270, 8, start_gradient_color, corner_radius=20)
+        rect_position = (40, 225)
+        background.paste(rect_thumbnail, rect_position, rect_thumbnail)
 
         text_x_position = 565
         title1 = truncate(title)
