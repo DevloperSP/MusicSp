@@ -84,21 +84,21 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://files.catbox.moe/vpnmpn.jpg"
+    "START_IMG_URL", "https://raw.githubusercontent.com/DevloperSP/MusicSp/main/.assets/sunset_mountain.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://files.catbox.moe/aktixg.jpg"
+    "PING_IMG_URL", "https://raw.githubusercontent.com/DevloperSP/MusicSp/main/.assets/starry_night.jpg"
 )
-PLAYLIST_IMG_URL = "https://files.catbox.moe/aktixg.jpg"
-STATS_IMG_URL = "https://files.catbox.moe/vpnmpn.jpg"
-TELEGRAM_AUDIO_URL = "https://graph.org//file/2f7debf856695e0ef0607.png"
-TELEGRAM_VIDEO_URL = "https://graph.org//file/2f7debf856695e0ef0607.png"
-STREAM_IMG_URL = "https://te.legra.ph/file/bd995b032b6bd263e2cc9.jpg"
-SOUNCLOUD_IMG_URL = "https://te.legra.ph/file/bb0ff85f2dd44070ea519.jpg"
-YOUTUBE_IMG_URL = "https://graph.org//file/2f7debf856695e0ef0607.png"
-SPOTIFY_ARTIST_IMG_URL = "https://te.legra.ph/file/37d163a2f75e0d3b403d6.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://te.legra.ph/file/b35fd1dfca73b950b1b05.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://te.legra.ph/file/95b3ca7993bbfaf993dcb.jpg"
+PLAYLIST_IMG_URL = "https://raw.githubusercontent.com/DevloperSP/MusicSp/main/.assets/starry_night.jpg"
+STATS_IMG_URL = "https://raw.githubusercontent.com/DevloperSP/MusicSp/main/.assets/sunset_mountain.jpg"
+TELEGRAM_AUDIO_URL = "https://raw.githubusercontent.com/DevloperSP/MusicSp/main/.assets/morning_sunrise.jpg"
+TELEGRAM_VIDEO_URL = "https://raw.githubusercontent.com/DevloperSP/MusicSp/main/.assets/morning_sunrise.jpg"
+STREAM_IMG_URL = "https://raw.githubusercontent.com/DevloperSP/MusicSp/main/.assets/morning_sunrise.jpg"
+SOUNCLOUD_IMG_URL = "https://raw.githubusercontent.com/DevloperSP/MusicSp/main/.assets/music_forest.jpg"
+YOUTUBE_IMG_URL = "https://raw.githubusercontent.com/DevloperSP/MusicSp/main/.assets/morning_sunrise.jpg"
+SPOTIFY_ARTIST_IMG_URL = "https://raw.githubusercontent.com/DevloperSP/MusicSp/main/.assets/music_forest.jpg"
+SPOTIFY_ALBUM_IMG_URL = "https://raw.githubusercontent.com/DevloperSP/MusicSp/main/.assets/music_forest.jpg"
+SPOTIFY_PLAYLIST_IMG_URL = "https://raw.githubusercontent.com/DevloperSP/MusicSp/main/.assets/music_forest.jpg"
 
 
 def time_to_seconds(time):
