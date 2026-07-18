@@ -50,7 +50,7 @@ async def init():
         pass
     await DevSp.decorators()
     LOGGER("MusicSp").info(
-        "MusicSp Started Successfully.\n\nDon't forget to visit @Mecobots"
+        "MusicSp Started Successfully.\n\nDon't forget to visit @MusicSp"
     )
     await idle()
     await app.stop()
