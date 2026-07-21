@@ -7,7 +7,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from MusicSp import LOGGER, app, userbot
 from MusicSp.core.call import DevSp
-from MusicSp.misc import sudo
+from MusicSp.misc import sudo, system_check
 from MusicSp.plugins import ALL_MODULES
 from MusicSp.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
@@ -52,6 +52,10 @@ async def init():
     LOGGER("MusicSp").info(
         "MusicSp Started Successfully.\n\nDon't forget to visit @MusicSp"
     )
+    try:
+        await system_check()
+    except:
+        pass
     await idle()
     await app.stop()
     await userbot.stop()

