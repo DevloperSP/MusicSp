@@ -1,7 +1,7 @@
 
 import config
 from MusicSp import app
-from pyrogram.types import InlineKeyboardButton
+from pyrogram.enums import ButtonStyle
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
