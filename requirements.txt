@@ -38,6 +38,7 @@ yt-dlp
 youtube-search-python
 
 
+
 # --- HTTP2 client (locked for stability) ---
 httpx[http2]
 py-yt-search
