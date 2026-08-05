@@ -37,8 +37,6 @@ speedtest-cli
 yt-dlp
 youtube-search-python
 
-# --- Pyrogram (custom version) ---
-git+https://github.com/KurimuzonAkuma/pyrogram.git@2ae00a2710dd3e347798473f3dd784e9639edb1a
 
 # --- HTTP2 client (locked for stability) ---
 httpx[http2]
