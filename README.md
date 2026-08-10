@@ -191,5 +191,5 @@ This project is licensed under the **MIT License**. For complete terms and permi
 </p>
 
 We would like to express our gratitude to all contributors, developers, and supporters who have helped shape the **Devloper Sparrow Bot**:
-- **Source Code Credits:** [Devloper Sparrow Bot](https://t.me/DevSpumusicbot) and [Devloper Sparrow](https://github.com/DevloperSP/MusicSp) repositories for the foundations.
+- **Source Code Credits:** [Devloper Sparrow Bot](https://t.me/@MusicSp1_bot) and [Devloper Sparrow](https://github.com/DevloperSP/MusicSp) repositories for the foundations.
 - **Customization & Maintenance:** Rebranded, updated, and maintained by **DevSparrow**.
