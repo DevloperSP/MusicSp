@@ -7,10 +7,12 @@ from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from py_yt import VideosSearch, Playlist
 import aiohttp
+import config
 
-API_URL = os.environ.get("MusicSp_API_URL", None)
-
-API_KEY = os.environ.get("MusicSp_API_KEY", None) ## Get This API KEY FROM OWNER: @SpYtAPIBot 
+API_URL = config.API_URL or os.environ.get("MusicSp_API_URL", None)
+if API_URL:
+    API_URL = API_URL.rstrip("/")
+API_KEY = config.API_KEY or os.environ.get("MusicSp_API_KEY", None)
 
 DOWNLOAD_DIR = "downloads"
 
@@ -29,6 +31,9 @@ async def download_song(link: str) -> str:
     file_path = os.path.join(DOWNLOAD_DIR, f"{video_id}.mp3")
     if os.path.exists(file_path) and os.path.getsize(file_path) > 0:
         return file_path
+
+    if not API_URL:
+        return None
 
     try:
         async with aiohttp.ClientSession() as session:
@@ -63,6 +68,9 @@ async def download_video(link: str) -> str:
     file_path = os.path.join(DOWNLOAD_DIR, f"{video_id}.mp4")
     if os.path.exists(file_path) and os.path.getsize(file_path) > 0:
         return file_path
+
+    if not API_URL:
+        return None
 
     try:
         async with aiohttp.ClientSession() as session:
