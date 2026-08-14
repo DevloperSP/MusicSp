@@ -1,7 +1,7 @@
-<h1 align="center"><img src=".assets/animated_title.svg" alt="Devloper Sparrow" height="55"></h1>
+<h1 align="center"><img src=".assets/animated_title.svg" alt="Devloper Arvind" height="55"></h1>
 
 <p align="center">
-  <img src=".assets/social_preview.jpg" alt="Devloper Sparrow Logo" width="100%" style="border-radius: 8px;">
+  <img src=".assets/social_preview.jpg" alt="Devloper Arvind Logo" width="100%" style="border-radius: 8px;">
 </p>
 
 <p align="center">
@@ -9,10 +9,10 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/stars/DevloperSP/MusicSp?style=for-the-badge&color=blue" alt="GitHub stars">
-  <img src="https://img.shields.io/github/forks/DevloperSP/MusicSp?style=for-the-badge&color=blue" alt="GitHub forks">
-  <img src="https://img.shields.io/github/issues/DevloperSP/MusicSp?style=for-the-badge&color=red" alt="GitHub issues">
-  <img src="https://img.shields.io/github/license/DevloperSP/MusicSp?style=for-the-badge&color=green" alt="GitHub license">
+  <img src="https://img.shields.io/github/stars/DevloperSP/MusicAk?style=for-the-badge&color=blue" alt="GitHub stars">
+  <img src="https://img.shields.io/github/forks/DevloperSP/MusicAk?style=for-the-badge&color=blue" alt="GitHub forks">
+  <img src="https://img.shields.io/github/issues/DevloperAk/MusicAk?style=for-the-badge&color=red" alt="GitHub issues">
+  <img src="https://img.shields.io/github/license/DevloperAk/MusicAk?style=for-the-badge&color=green" alt="GitHub license">
 </p>
 
 <h2 align="center">Delivering Superior Music Experience to Telegram</h2>
