@@ -23,8 +23,8 @@
   <a href="https://t.me/Mecobots">
     <img src="https://img.shields.io/badge/Developer%20Home-Telegram-2E64FE?style=for-the-badge&logo=telegram&logoColor=white" alt="Developer Home">
   </a>
-  <a href="https://t.me/Spparow_92">
-    <img src="https://img.shields.io/badge/Contact%20Owner-%40Spparow__92-0088cc?style=for-the-badge&logo=telegram&logoColor=white" alt="Contact Owner">
+  <a href="https://t.me/thejaatxd">
+    <img src="https://img.shields.io/badge/Contact%20Owner-%40Ak__92-0088cc?style=for-the-badge&logo=telegram&logoColor=white" alt="Contact Owner">
   </a>
 </p>
 
