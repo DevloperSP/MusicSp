@@ -24,7 +24,7 @@
     <img src="https://img.shields.io/badge/Developer%20Home-Telegram-2E64FE?style=for-the-badge&logo=telegram&logoColor=white" alt="Developer Home">
   </a>
   <a href="https://t.me/thejaatxd">
-    <img src="https://img.shields.io/badge/Contact%20Owner-%40Ak__92-0088cc?style=for-the-badge&logo=telegram&logoColor=white" alt="Contact Owner">
+    <img src="https://img.shields.io/badge/Contact%20Owner-%40Thejaatxd-0088cc?style=for-the-badge&logo=telegram&logoColor=white" alt="Contact Owner">
   </a>
 </p>
 
@@ -156,7 +156,7 @@ Stay updated with the latest features, releases, and fixes for **Devloper Sparro
   <a href="https://t.me/Mecobots">
     <img src="https://img.shields.io/badge/Join-Developer%20Home-blue?style=for-the-badge&logo=telegram" alt="Developer Home">
   </a>
-  <a href="https://t.me/Spparow_92">
+  <a href="https://t.me/Thejaatxd">
     <img src="https://img.shields.io/badge/Direct-Support-blue?style=for-the-badge&logo=telegram" alt="Direct Support">
   </a>
 </p>
@@ -191,5 +191,5 @@ This project is licensed under the **MIT License**. For complete terms and permi
 </p>
 
 We would like to express our gratitude to all contributors, developers, and supporters who have helped shape the **Devloper Sparrow Bot**:
-- **Source Code Credits:** [Devloper Sparrow Bot](https://t.me/@MusicSp1_bot) and [Devloper Sparrow](https://github.com/DevloperSP/MusicSp) repositories for the foundations.
+- **Source Code Credits:** [Devloper Sparrow Bot](https://t.me/@Nokiamusicbot) and [Devloper Sparrow](https://github.com/DevloperSP/MusicSp) repositories for the foundations.
 - **Customization & Maintenance:** Rebranded, updated, and maintained by **DevSparrow**.
