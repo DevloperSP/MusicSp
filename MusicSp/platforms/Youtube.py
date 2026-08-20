@@ -131,11 +131,15 @@ class YouTubeAPI:
         if "&" in link:
             link = link.split("&")[0]
         results = VideosSearch(link, limit=1)
-        for result in (await results.next())["result"]:
-            title = result["title"]
-            duration_min = result["duration"]
-            thumbnail = result["thumbnails"][0]["url"].split("?")[0]
-            vidid = result["id"]
+        res = await results.next()
+        if not res or not res.get("result"):
+            return "", "0:00", 0, "", ""
+        for result in res["result"]:
+            title = result.get("title", "")
+            duration_min = result.get("duration", "0:00")
+            thumbnails = result.get("thumbnails", [])
+            thumbnail = thumbnails[0]["url"].split("?")[0] if thumbnails else ""
+            vidid = result.get("id", "")
             duration_sec = int(time_to_seconds(duration_min)) if duration_min else 0
         return title, duration_min, duration_sec, thumbnail, vidid
 
@@ -145,8 +149,11 @@ class YouTubeAPI:
         if "&" in link:
             link = link.split("&")[0]
         results = VideosSearch(link, limit=1)
-        for result in (await results.next())["result"]:
-            return result["title"]
+        res = await results.next()
+        if res and res.get("result"):
+            for result in res["result"]:
+                return result.get("title", "")
+        return ""
 
     async def duration(self, link: str, videoid: Union[bool, str] = None):
         if videoid:
@@ -154,8 +161,11 @@ class YouTubeAPI:
         if "&" in link:
             link = link.split("&")[0]
         results = VideosSearch(link, limit=1)
-        for result in (await results.next())["result"]:
-            return result["duration"]
+        res = await results.next()
+        if res and res.get("result"):
+            for result in res["result"]:
+                return result.get("duration", "0:00")
+        return "0:00"
 
     async def thumbnail(self, link: str, videoid: Union[bool, str] = None):
         if videoid:
@@ -163,8 +173,12 @@ class YouTubeAPI:
         if "&" in link:
             link = link.split("&")[0]
         results = VideosSearch(link, limit=1)
-        for result in (await results.next())["result"]:
-            return result["thumbnails"][0]["url"].split("?")[0]
+        res = await results.next()
+        if res and res.get("result"):
+            for result in res["result"]:
+                thumbnails = result.get("thumbnails", [])
+                return thumbnails[0]["url"].split("?")[0] if thumbnails else ""
+        return ""
 
     async def video(self, link: str, videoid: Union[bool, str] = None):
         if videoid:
@@ -205,12 +219,16 @@ class YouTubeAPI:
         if "&" in link:
             link = link.split("&")[0]
         results = VideosSearch(link, limit=1)
-        for result in (await results.next())["result"]:
-            title = result["title"]
-            duration_min = result["duration"]
-            vidid = result["id"]
-            yturl = result["link"]
-            thumbnail = result["thumbnails"][0]["url"].split("?")[0]
+        res = await results.next()
+        if not res or not res.get("result"):
+            return {}, ""
+        for result in res["result"]:
+            title = result.get("title", "")
+            duration_min = result.get("duration", "0:00")
+            vidid = result.get("id", "")
+            yturl = result.get("link", "")
+            thumbnails = result.get("thumbnails", [])
+            thumbnail = thumbnails[0]["url"].split("?")[0] if thumbnails else ""
         track_details = {
             "title": title,
             "link": yturl,
@@ -253,11 +271,15 @@ class YouTubeAPI:
         if "&" in link:
             link = link.split("&")[0]
         a = VideosSearch(link, limit=10)
-        result = (await a.next()).get("result")
-        title = result[query_type]["title"]
-        duration_min = result[query_type]["duration"]
-        vidid = result[query_type]["id"]
-        thumbnail = result[query_type]["thumbnails"][0]["url"].split("?")[0]
+        res = await a.next()
+        result = res.get("result") if res else []
+        if not result or query_type >= len(result):
+            return "", "0:00", "", ""
+        title = result[query_type].get("title", "")
+        duration_min = result[query_type].get("duration", "0:00")
+        vidid = result[query_type].get("id", "")
+        thumbnails = result[query_type].get("thumbnails", [])
+        thumbnail = thumbnails[0]["url"].split("?")[0] if thumbnails else ""
         return title, duration_min, thumbnail, vidid
 
     async def download(
