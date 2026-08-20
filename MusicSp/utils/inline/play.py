@@ -1,5 +1,12 @@
-import math
-from pyrogram.enums import ButtonStyle
+try:
+    from pyrogram.enums import ButtonStyle
+except ImportError:
+    class ButtonStyle:
+        PRIMARY = None
+        SECONDARY = None
+        SUCCESS = None
+        DANGER = None
+        DEFAULT = None
 from pyrogram.types import InlineKeyboardButton
 
 from MusicSp.utils.formatters import time_to_seconds

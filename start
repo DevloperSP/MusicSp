@@ -1,1 +1,8 @@
-python3 -m MusicSp
+#!/bin/bash
+if [ -d ".venv" ]; then
+    .venv/bin/python -m MusicSp
+elif [ -d "venv" ]; then
+    venv/bin/python -m MusicSp
+else
+    python3 -m MusicSp
+fi

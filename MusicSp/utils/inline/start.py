@@ -1,7 +1,15 @@
 
 import config
 from MusicSp import app
-from pyrogram.enums import ButtonStyle
+try:
+    from pyrogram.enums import ButtonStyle
+except ImportError:
+    class ButtonStyle:
+        PRIMARY = None
+        SECONDARY = None
+        SUCCESS = None
+        DANGER = None
+        DEFAULT = None
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 

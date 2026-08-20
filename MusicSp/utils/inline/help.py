@@ -1,7 +1,15 @@
 from typing import Union
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
-from pyrogram.enums import ButtonStyle
+try:
+    from pyrogram.enums import ButtonStyle
+except ImportError:
+    class ButtonStyle:
+        PRIMARY = None
+        SECONDARY = None
+        SUCCESS = None
+        DANGER = None
+        DEFAULT = None
 from MusicSp import app
 
 
