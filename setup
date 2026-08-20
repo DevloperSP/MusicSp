@@ -60,14 +60,12 @@ venv_setup(){
 }
 
 installation(){
+	pprint "\nInstalling py-tgcalls 0.9.7 into .venv...\n"
+	.venv/bin/python -c "import urllib.request, zipfile, io, sys; url='https://files.pythonhosted.org/packages/13/2d/b6c556e815f185075eeb747b1f89e8c6198b442010eeecc7e99ccc9d17d3/py_tgcalls-0.9.7-cp311-cp311-manylinux2014_x86_64.whl'; data = urllib.request.urlopen(url).read(); z = zipfile.ZipFile(io.BytesIO(data)); sp = [p for p in sys.path if 'site-packages' in p][0]; z.extractall(sp)" &>>pypilog.txt
+
 	pprint "\nUpgrading pip and installing Python dependencies into .venv...\n"
 	.venv/bin/python -m pip install -U pip &>>pypilog.txt
 	.venv/bin/python -m pip install -U -r requirements.txt &>>pypilog.txt
-	if [ $? -ne 0 ]; then
-		pprint "Standard pip install hit a resolution issue, attempting fallback for py-tgcalls...\n" "cyellow"
-		.venv/bin/python -m pip install https://files.pythonhosted.org/packages/13/2d/b6c556e815f185075eeb747b1f89e8c6198b442010eeecc7e99ccc9d17d3/py_tgcalls-0.9.7-cp311-cp311-manylinux2014_x86_64.whl &>>pypilog.txt
-		.venv/bin/python -m pip install -U -r requirements.txt &>>pypilog.txt
-	fi
 
 	if .venv/bin/python -c "import MusicSp" &>/dev/null; then
 		pprint "DONE.\n" "cgreen"
