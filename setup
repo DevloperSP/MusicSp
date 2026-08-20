@@ -66,6 +66,7 @@ installation(){
 	pprint "\nUpgrading pip and installing Python dependencies into .venv...\n"
 	.venv/bin/python -m pip install -U pip &>>pypilog.txt
 	.venv/bin/python -m pip install -U -r requirements.txt &>>pypilog.txt
+	.venv/bin/python -m pip install tgcrypto &>>pypilog.txt || true
 
 	if .venv/bin/python -c "import MusicSp" &>/dev/null; then
 		pprint "DONE.\n" "cgreen"
