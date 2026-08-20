@@ -47,10 +47,11 @@ packages(){
 
 venv_setup(){
 	pprint "Setting up Python virtual environment (.venv)... "
-	if [ ! -d ".venv" ]; then
+	if [ ! -f ".venv/bin/python" ]; then
+		rm -rf .venv
 		python3 -m venv .venv &>>pypilog.txt
 	fi
-	if [ -d ".venv" ]; then
+	if [ -f ".venv/bin/python" ]; then
 		pprint "SUCCESS.\n\n" "cgreen"
 	else
 		pprint "FAIL.\n\n" "cred"
