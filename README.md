@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img src=".assets/social_preview.jpg" alt="MusicSp Telegram Music Bot Banner" width="100%" style="border-radius: 10px;">
+  <img src=".assets/social_preview.jpg" alt="MusicSp Telegram Music Bot Banner" width="100%" style="border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
 </p>
 
 <p align="center">
@@ -11,92 +11,102 @@
 </p>
 
 <p align="center">
-  <b>🎵 High-Performance Telegram Voice Chat Music & Video Streaming Bot</b>
+  <b>✨ 𝑴𝒖𝒔𝒊𝒄𝑺𝒑 — 𝑵𝒆𝒙𝒕-𝑮𝒆𝒏 𝑻𝒆𝒍𝒆𝒈𝒓𝒂𝒎 𝑽𝒐𝒊𝒄𝒆 𝑪𝒉𝒂𝒕 𝑴𝒖𝒔𝒊𝒄 & 𝑽𝒊𝒅𝒆𝒐 𝑺𝒕𝒓𝒆𝒂𝒎𝒊𝒏𝒈 𝑬𝒏𝒈𝒊𝒏𝒆 🎶</b>
   <br>
-  <i>Powered by Python, Kurigram, and PyTgCalls (Developer Sparrow Core)</i>
+  <i>⚡ 𝑷𝒐𝒘𝒆𝒓𝒆𝒅 𝒃𝒚 𝑷𝒚𝒕𝒉𝒐𝒏, 𝑲𝒖𝒓𝒊𝒈𝒓𝒂𝒎 & 𝑷𝒚𝑻𝒈𝑪𝒂𝒍𝒍𝒔 • 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝑺𝒑𝒂𝒓𝒓𝒐𝒘 𝑪𝒐𝒓𝒆 🦅</i>
 </p>
 
 <p align="center">
-  <a href="https://github.com/DevloperSP/MusicSp/stargazers"><img src="https://img.shields.io/github/stars/DevloperSP/MusicSp?style=for-the-badge&color=blue" alt="GitHub Stars"></a>
-  <a href="https://github.com/DevloperSP/MusicSp/network/members"><img src="https://img.shields.io/github/forks/DevloperSP/MusicSp?style=for-the-badge&color=blue" alt="GitHub Forks"></a>
-  <a href="https://github.com/DevloperSP/MusicSp/blob/main/LICENSE"><img src="https://img.shields.io/github/license/DevloperSP/MusicSp?style=for-the-badge&color=green" alt="License"></a>
-  <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.10%20%7C%203.12-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
-  <a href="https://t.me/Mecobots"><img src="https://img.shields.io/badge/Telegram-Community-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Community"></a>
+  <a href="https://github.com/DevloperSP/MusicSp/stargazers"><img src="https://img.shields.io/github/stars/DevloperSP/MusicSp?style=for-the-badge&color=2563EB" alt="GitHub Stars"></a>
+  <a href="https://github.com/DevloperSP/MusicSp/network/members"><img src="https://img.shields.io/github/forks/DevloperSP/MusicSp?style=for-the-badge&color=3B82F6" alt="GitHub Forks"></a>
+  <a href="https://github.com/DevloperSP/MusicSp/blob/main/LICENSE"><img src="https://img.shields.io/github/license/DevloperSP/MusicSp?style=for-the-badge&color=10B981" alt="License"></a>
+  <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.10%20%7C%203.12-F59E0B?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
+  <a href="https://t.me/Mecobots"><img src="https://img.shields.io/badge/Telegram-Community-06B6D4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Community"></a>
 </p>
 
 ---
 
-## 📖 Introduction to MusicSp
+## 🌟 𝑷𝒓𝒐𝒋𝒆𝒄𝒕 𝑶𝒗𝒆𝒓𝒗𝒊𝒆𝒘
 
-**MusicSp** *(also recognized as **Sparrow Music Bot** / **Developer Sparrow Core**)* is a modern, high-speed open-source Telegram Voice Chat Music and Video Player built with **Python 3**. Utilizing **Kurigram / Pyrogram** for Telegram MTProto operations and **PyTgCalls** for low-latency WebRTC media streaming, MusicSp delivers an uninterrupted, crystal-clear listening experience in Telegram groups, channels, and supergroups.
+**MusicSp** *(also known across Telegram as **Sparrow Music Bot** / **Developer Sparrow Core**)* is a modern, ultra-fast, open-source streaming bot engineered in **Python 3**. It harnesses the asynchronous speed of **Kurigram / Pyrogram** for Telegram MTProto communication and **PyTgCalls (WebRTC)** for high-fidelity audio and crystal-clear HD video streaming directly in Telegram Voice Chats, Supergroups, and Channel Live Streams.
 
-Whether you are hosting a live radio stream, watching music videos with friends, or managing audio queues in large communities, MusicSp provides seamless playback, interactive colourful inline buttons, and automated multi-assistant scaling.
-
----
-
-## ⚡ Key Highlights & Features
-
-- 🎧 **Multi-Platform Music Playback**: Stream songs and audio from **YouTube**, **Spotify**, **Apple Music**, **SoundCloud**, **Resso**, and **Telegram Direct Media** files.
-- 📺 **Dual Mode Audio & HD Video Streaming**: Support for both standard voice chat audio (`/play`) and high-definition video chat streaming (`/vplay`).
-- 🎨 **Colourful Interactive Inline UI**: Intuitive inline control buttons with `ButtonStyle` styling and custom Telegram emojis for Play, Pause, Skip, Stop, and Settings.
-- 🚀 **Multi-Assistant Architecture**: Configure up to 5 assistant sessions (`STRING_SESSION` to `STRING_SESSION5`) for automatic load balancing across multiple active calls.
-- 🎚️ **Live Playback Controls**: Real-time seeking (`/seek`), speed alteration (`/speed` from 0.5x to 2.0x), track looping (`/loop`), and random queue shuffling (`/shuffle`).
-- 📜 **Personal & Group Playlist Support**: Save your favorite songs to personal MongoDB playlists and play entire collections with a single command (`/playlist`).
-- 🌐 **Multilingual System**: Localized response strings supporting multiple languages for global Telegram communities.
-- 🛡️ **Ultra-Fast & Crash-Resistant**: Fully asynchronous architecture backed by `Motor` (async MongoDB) and isolated `.venv` deployment mechanisms.
+Designed for peak stability and seamless user experience, MusicSp features multi-source music streaming (YouTube, Spotify, Apple Music, SoundCloud, Resso, Telegram Direct Files), interactive colorful inline buttons with custom emoji support, intelligent multi-assistant load distribution, and async MongoDB storage.
 
 ---
 
-## 📻 Supported Streaming Platforms
+## 💎 𝑲𝒆𝒚 𝑭𝒆𝒂𝒕𝒖𝒓𝒆𝒔 & 𝑪𝒂𝒑𝒂𝒃𝒊𝒍𝒊𝒕𝒊𝒆𝒔
 
-| Source Platform | Audio Stream | Video Stream | Playlist Support | Input Methods |
+- 🎧 **Multi-Source Streaming**: Stream audio and videos seamlessly from YouTube, Spotify, Apple Music, SoundCloud, Resso, and direct Telegram audio/video documents.
+- 📹 **Dual Audio & HD Video Modes**: Effortlessly toggle between voice chat audio streaming (`/play`) and high-definition video chat broadcasting (`/vplay`).
+- 🎨 **Colourful Interactive UI**: Custom inline buttons styled with Kurigram `ButtonStyle` (Primary, Success, Danger) and premium custom emoji animations.
+- ⚡ **Multi-Assistant Scaling**: Supports up to 5 assistant sessions (`STRING_SESSION` to `STRING_SESSION5`) for smooth load-balancing across multiple active chats.
+- 🎚️ **Live Stream Controls**: Real-time seeking (`/seek`), speed alteration (`/speed` from 0.5x to 2.0x), track loop (`/loop`), and random queue shuffle (`/shuffle`).
+- 📜 **Smart Queue & Playlist Management**: Queuing engine with track search slider, personal saved playlist management (`/playlist`), and live queue inspection (`/queue`).
+- 🌐 **Multilingual Engine**: Native support for multiple international languages with instant language selection (`/lang`).
+- 🛡️ **Fail-Safe & Crash-Proof**: Fully asynchronous architecture backed by Motor MongoDB, isolated virtual environment (`.venv`) support, and resilient network failover.
+
+---
+
+## 🎧 𝑺𝒖𝒑𝒑𝒐𝒓𝒕𝒆𝒅 𝑴𝒖𝒔𝒊𝒄 & 𝑽𝒊𝒅𝒆𝒐 𝑺𝒐𝒖𝒓𝒄𝒆𝒔
+
+| 📻 Platform | 🎵 Audio Stream | 📺 Video Stream | 📑 Playlist Support | 🔍 Input Method |
 | :--- | :---: | :---: | :---: | :--- |
-| **YouTube** | ✅ | ✅ | ✅ | Track Link, Playlist Link, Song Title Search |
+| **YouTube** | ✅ | ✅ | ✅ | Direct Link, Playlist Link, Song Title Search |
 | **Spotify** | ✅ | ❌ | ✅ | Track Link, Album Link, Playlist Link, Artist Link |
 | **Apple Music** | ✅ | ❌ | ✅ | Song Link, Playlist Link |
 | **SoundCloud** | ✅ | ❌ | ❌ | Track Link |
 | **Resso** | ✅ | ❌ | ❌ | Track Link |
-| **Telegram Files** | ✅ | ✅ | ❌ | Audio, Video, Voice Notes, File Documents |
+| **Telegram Media** | ✅ | ✅ | ❌ | Audio Files, Video Files, Voice Notes, Documents |
 
 ---
 
-## 🛠️ Bot Commands Reference
+## 🎛️ 𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔 & 𝑼𝒔𝒂𝒈𝒆 𝑴𝒂𝒏𝒖𝒂𝒍
 
-### 🎵 General User Commands
+<details>
+<summary><b>🎵 𝑼𝒔𝒆𝒓 𝑷𝒍𝒂𝒚𝒃𝒂𝒄𝒌 𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔 (Click to Expand)</b></summary>
+<br>
 
-| Command | Action |
+| Command | Description |
 | :--- | :--- |
 | `/play <query/link>` | Stream audio in group voice chat. |
 | `/vplay <query/link>` | Stream HD video in group voice chat. |
 | `/cplay <query/link>` | Stream audio in linked channel voice chat. |
 | `/cvplay <query/link>` | Stream video in linked channel voice chat. |
-| `/queue` | Display currently queued tracks. |
-| `/playlist` | Open your personal saved playlist menu. |
+| `/queue` | View the current queue of upcoming songs. |
+| `/playlist` | View or play your personal saved playlist. |
 | `/lyrics <song name>` | Search and fetch synchronized song lyrics. |
 | `/ping` | Check bot latency, CPU load, and server uptime. |
-| `/stats` | View global bot usage metrics. |
-| `/settings` | Open interactive chat preferences. |
-| `/help` | Display the interactive help panel. |
-| `/repo` | Show official repository details. |
+| `/stats` | View global bot usage statistics. |
+| `/settings` | Open interactive chat configuration menu. |
+| `/help` | Open the interactive help panel. |
+| `/repo` | Display repository information. |
 
-### 🎛️ Admin & Playback Controls
+</details>
 
-| Command | Action |
+<details>
+<summary><b>🎚️ 𝑨𝒅𝒎𝒊𝒏 𝑽𝒐𝒊𝒄𝒆 𝑪𝒉𝒂𝒕 𝑪𝒐𝒏𝒕𝒓𝒐𝒍𝒔 (Click to Expand)</b></summary>
+<br>
+
+| Command | Description |
 | :--- | :--- |
-| `/pause` | Temporarily pause current track. |
+| `/pause` | Temporarily pause current track playback. |
 | `/resume` | Resume playback from paused state. |
 | `/skip` | Skip current track and play next in queue. |
-| `/end` or `/stop` | End stream and clear active queue. |
-| `/mute` | Mute assistant in voice chat. |
-| `/unmute` | Unmute assistant in voice chat. |
+| `/end` or `/stop` | Stop playback and clear the active queue. |
+| `/mute` | Mute assistant in the group voice chat. |
+| `/unmute` | Unmute assistant in the group voice chat. |
 | `/seek <seconds>` | Jump forward or backward in active track. |
-| `/speed <0.5x - 2.0x>` | Adjust stream playback tempo. |
+| `/speed <0.5x - 2.0x>` | Adjust stream playback speed. |
 | `/loop <1-10 / disable>` | Repeat current track or active queue. |
 | `/shuffle` | Randomize the order of queued tracks. |
 
-### 🔐 Sudo & Owner Management
+</details>
 
-| Command | Action |
+<details>
+<summary><b>👑 𝑺𝒖𝒅𝒐 & 𝑶𝒘𝒏𝒆𝒓 𝑴𝒂𝒏𝒂𝒈𝒆𝒎𝒆𝒏𝒕 (Click to Expand)</b></summary>
+<br>
+
+| Command | Description |
 | :--- | :--- |
 | `/broadcast <text>` | Broadcast an announcement to all served chats. |
 | `/gban <user_id>` | Global ban malicious users across all bot chats. |
@@ -105,33 +115,17 @@ Whether you are hosting a live radio stream, watching music videos with friends,
 | `/update` | Pull and merge latest updates from Git upstream. |
 | `/logs` | Retrieve recent execution error and activity logs. |
 
----
-
-## 🏛️ System Architecture
-
-```mermaid
-graph LR
-    User[Telegram User] -->|Commands| Bot[MusicSp Bot Client]
-    Bot -->|Async Query| DB[(MongoDB Atlas)]
-    Bot -->|Search & Fetch| Fetcher[YouTube / Spotify / Apple / Cloud]
-    Bot -->|Stream Engine| VC[PyTgCalls WebRTC Engine]
-    VC -->|Audio & Video Stream| Chat[Group Voice Chat / Video Call]
-    Assistant[Assistant Userbot] -->|Active Participant| Chat
-```
-
-- **Framework**: [Kurigram](https://github.com/kurigram/kurigram) / [Pyrogram](https://github.com/pyrogram/pyrogram) MTProto Client
-- **Voice Calling Engine**: [PyTgCalls](https://github.com/pytgcalls/pytgcalls) & [NTgCalls](https://github.com/pytgcalls/ntgcalls)
-- **Database**: [MongoDB](https://www.mongodb.com) with [Motor](https://motor.readthedocs.io/) async driver
-- **Media Engine**: `yt-dlp`, `ffmpeg`, `py-yt-search`, `spotipy`
-- **Environment**: Python 3.10+ / 3.12 (Virtualenv Isolated)
+</details>
 
 ---
 
-## 🚀 Deployment & Installation
+## 🚀 𝑫𝒆𝒑𝒍𝒐𝒚𝒎𝒆𝒏𝒕 𝑮𝒖𝒊𝒅𝒆𝒔 (𝑪𝒍𝒊𝒄𝒌 𝒕𝒐 𝑬𝒙𝒑𝒂𝒏𝒅)
 
-### 1. One-Click Deploy to Heroku
+<details>
+<summary><b>🟣 𝑶𝒏𝒆-𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒐𝒌𝒖 𝑫𝒆𝒑𝒍𝒐𝒚𝒎𝒆𝒏𝒕</b></summary>
+<br>
 
-Deploy **MusicSp** directly on Heroku with a single click:
+Deploy **MusicSp** instantly on Heroku with pre-configured buildpacks:
 
 <p align="center">
   <a href="https://dashboard.heroku.com/new?template=https://github.com/DevloperSP/MusicSp">
@@ -139,56 +133,97 @@ Deploy **MusicSp** directly on Heroku with a single click:
   </a>
 </p>
 
----
+1. Click the **Deploy to Heroku** button above.
+2. Enter your `API_ID`, `API_HASH`, `BOT_TOKEN`, `MONGO_DB_URI`, `OWNER_ID`, `LOG_GROUP_ID`, and `STRING_SESSION`.
+3. Click **Deploy App** and turn on the worker dyno in your dashboard.
 
-### 2. VPS Deployment (Ubuntu 24.04 / 22.04 LTS / Debian)
+</details>
 
-MusicSp includes automated environment scripts (`setup` & `start`) that configure an isolated `.venv` to prevent PEP 668 restrictions:
+<details>
+<summary><b>🐧 𝑼𝒃𝒖𝒏𝒕𝒖 / 𝑫𝒆𝒃𝒊𝒂𝒏 𝑽𝑷𝑺 𝑫𝒆𝒑𝒍𝒐𝒚𝒎𝒆𝒏𝒕 (.𝒗𝒆𝒏𝒗 𝑨𝒖𝒕𝒐𝒎𝒂𝒕𝒆𝒅)</b></summary>
+<br>
+
+MusicSp includes automated environment setup scripts (`setup` & `start`) that configure an isolated Python virtual environment (`.venv`) to completely prevent Ubuntu 24.04 PEP 668 restrictions:
 
 ```bash
-# Step 1: Update system packages
+# 1. Update and upgrade system packages
 sudo apt-get update && sudo apt-get upgrade -y
 
-# Step 2: Clone MusicSp repository
+# 2. Clone the MusicSp repository
 git clone https://github.com/DevloperSP/MusicSp
 cd MusicSp
 
-# Step 3: Run automated setup installer (creates .venv & installs dependencies)
+# 3. Run automated setup installer (Creates .venv & installs all dependencies)
 bash setup
 
-# Step 4: Configure environment variables
+# 4. Configure your environment variables
 cp sample.env .env
 vi .env
 
-# Step 5: Start the bot
+# 5. Launch the MusicSp bot
 bash start
 ```
 
----
+</details>
 
-### 3. Docker Deployment
+<details>
+<summary><b>🐳 𝑫𝒐𝒄𝒌𝒆𝒓 𝑪𝒐𝒏𝒕𝒂𝒊𝒏𝒆𝒓 𝑫𝒆𝒑𝒍𝒐𝒚𝒎𝒆𝒏𝒕</b></summary>
+<br>
 
 Deploy with containerization using the pre-configured [`Dockerfile`](Dockerfile):
 
 ```bash
-# Clone the repository
+# 1. Clone repository
 git clone https://github.com/DevloperSP/MusicSp
 cd MusicSp
 
-# Prepare environment file
+# 2. Setup environment variables
 cp sample.env .env
 vi .env
 
-# Build and run Docker container
+# 3. Build Docker container image
 docker build -t musicsp .
+
+# 4. Run Docker container in detached mode
 docker run -d --name musicsp_bot --env-file .env musicsp
 ```
 
+</details>
+
+<details>
+<summary><b>💻 𝑴𝒂𝒏𝒖𝒂𝒍 𝑳𝒐𝒄𝒂𝒍 / 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒎𝒆𝒏𝒕 𝑺𝒆𝒕𝒖𝒑</b></summary>
+<br>
+
+For local development and testing:
+
+```bash
+# 1. Clone repository
+git clone https://github.com/DevloperSP/MusicSp && cd MusicSp
+
+# 2. Create and activate virtual environment
+python3 -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+
+# 3. Install dependencies
+pip install -U pip
+pip install -U -r requirements.txt
+
+# 4. Configure .env and run
+cp sample.env .env
+python3 -m MusicSp
+```
+
+</details>
+
 ---
 
-## ⚙️ Environment Variables Reference
+## ⚙️ 𝑬𝒏𝒗𝒊𝒓𝒐𝒏𝒎𝒆𝒏𝒕 𝑽𝒂𝒓𝒊𝒂𝒃𝒍𝒆𝒔 (𝑪𝒐𝒏𝒇𝒊𝒈𝒖𝒓𝒂𝒕𝒊𝒐𝒏)
 
-| Variable | Required | Default | Purpose |
+<details>
+<summary><b>📋 𝑽𝒊𝒆𝒘 𝑭𝒖𝒍𝒍 𝑬𝒏𝒗𝒊𝒓𝒐𝒏𝒎𝒆𝒏𝒕 𝑽𝒂𝒓𝒊𝒂𝒃𝒍𝒆𝒔 𝑻𝒂𝒃𝒍𝒆</b></summary>
+<br>
+
+| Variable | Required | Default | Description |
 | :--- | :---: | :---: | :--- |
 | `API_ID` | **Yes** | — | Telegram API ID from [my.telegram.org](https://my.telegram.org). |
 | `API_HASH` | **Yes** | — | Telegram API Hash from [my.telegram.org](https://my.telegram.org). |
@@ -196,7 +231,7 @@ docker run -d --name musicsp_bot --env-file .env musicsp
 | `OWNER_ID` | **Yes** | — | Telegram numeric ID of the bot owner. |
 | `MONGO_DB_URI` | **Yes** | — | MongoDB Atlas connection URI string. |
 | `LOG_GROUP_ID` | **Yes** | — | Telegram Private Group ID for logging (e.g., `-100xxxxxxx`). |
-| `STRING_SESSION` | **Yes** | — | Pyrogram v2 String Session for Assistant 1. |
+| `STRING_SESSION` | **Yes** | — | Pyrogram v2 / Kurigram String Session for Assistant 1. |
 | `STRING_SESSION2` - `5` | Optional | `None` | Multi-assistant string sessions for load balancing. |
 | `SPOTIFY_CLIENT_ID` | Optional | `None` | Spotify Developer API Client ID. |
 | `SPOTIFY_CLIENT_SECRET`| Optional | `None` | Spotify Developer API Client Secret. |
@@ -205,59 +240,74 @@ docker run -d --name musicsp_bot --env-file .env musicsp
 | `DURATION_LIMIT` | Optional | `1700` | Maximum song duration limit in minutes. |
 | `AUTO_LEAVING_ASSISTANT`| Optional | `False` | Auto-leave voice chat assistant when call terminates. |
 
+</details>
+
 ---
 
-## ❓ Frequently Asked Questions
+## 🏗️ 𝑺𝒚𝒔𝒕𝒆𝒎 𝑨𝒓𝒄𝒉𝒊𝒕𝒆𝒄𝒕𝒖𝒓𝒆
+
+```mermaid
+graph LR
+    User([👤 Telegram User / Group]) -->|Commands / Play Request| Bot[🤖 MusicSp Bot Core]
+    Bot -->|Async Query| DB[(🗄️ MongoDB Atlas)]
+    Bot -->|Metadata Search| Fetcher[📡 YouTube / Spotify / Apple]
+    Bot -->|Stream Dispatch| VC[🔊 PyTgCalls WebRTC Engine]
+    VC -->|Audio & Video Feed| Call([🎙️ Group Voice Chat / Video Call])
+    Assistant[👥 Assistant Userbot] -->|Active Call Participant| Call
+```
+
+---
+
+## ❓ 𝑭𝒓𝒆𝒒𝒖𝒆𝒏𝒕𝒍𝒚 𝑨𝒔𝒌𝒆𝒅 𝑸𝒖𝒆𝒔𝒕𝒊𝒐𝒏𝒔
 
 <details>
 <summary><b>1. How does MusicSp solve the Ubuntu 24.04 PEP 668 error?</b></summary>
 <br>
-Modern Linux systems enforce PEP 668 to protect system packages. MusicSp's <code>bash setup</code> automatically creates and manages an isolated <code>.venv</code> virtual environment, and <code>bash start</code> executes the bot via <code>.venv/bin/python</code>.
+Modern Linux systems enforce PEP 668 to protect system Python packages. MusicSp's <code>bash setup</code> automatically creates and manages an isolated <code>.venv</code> virtual environment, and <code>bash start</code> executes the bot via <code>.venv/bin/python</code>.
 </details>
 
 <details>
-<summary><b>2. Why is the Assistant account not playing in the voice chat?</b></summary>
+<summary><b>2. Why is the Assistant account not joining the Voice Chat?</b></summary>
 <br>
-Ensure the Assistant account (from <code>STRING_SESSION</code>) has joined the group, the group voice chat is already started, and the bot has permissions to manage voice chats.
+Ensure the Assistant account (from <code>STRING_SESSION</code>) has joined the group, the group voice chat is already started, and the bot has permissions to invite users and manage voice chats.
 </details>
 
 <details>
 <summary><b>3. Can I use custom cookies or YouTube download APIs?</b></summary>
 <br>
-Yes! You can configure <code>API_URL</code> and <code>API_KEY</code> in your <code>.env</code> file for lightning-fast external audio resolution.
+Yes! You can configure <code>API_URL</code> and <code>API_KEY</code> in your <code>.env</code> file for lightning-fast external audio resolution without hitting server rate-limits.
 </details>
 
 ---
 
-## 🤝 Contributing
+## 🤝 𝑪𝒐𝒏𝒕𝒓𝒊𝒃𝒖𝒕𝒊𝒐𝒏 & 𝑳𝒊𝒄𝒆𝒏𝒔𝒆
 
-We welcome community contributions to **MusicSp**!
-
-1. 🍴 **Fork the Project** to your GitHub account.
-2. 🌿 **Create a Branch**: `git checkout -b feature/cool-feature`
+Contributions are welcome! Follow these steps:
+1. 🍴 **Fork the Repository** to your GitHub account.
+2. 🌿 **Create a Feature Branch**: `git checkout -b feature/cool-feature`
 3. ✍️ **Commit Changes**: `git commit -m 'Add cool feature'`
 4. 🚀 **Push Branch**: `git push origin feature/cool-feature`
 5. 📬 **Submit a Pull Request** to our `main` branch.
 
----
-
-## 📄 License & Credits
-
-- **License**: Released under the [GNU Affero General Public License v3.0 (AGPL-3.0)](LICENSE).
+- **License**: Distributed under the [GNU Affero General Public License v3.0 (AGPL-3.0)](LICENSE).
 - **Core Engine**: Built & maintained with ❤️ by [DevloperSP](https://github.com/DevloperSP) (**Developer Sparrow**).
 
 ---
 
-## 💬 Community & Support
+## 💬 𝑪𝒐𝒎𝒎𝒖𝒏𝒊𝒕𝒚 & 𝑺𝒖𝒑𝒑𝒐𝒓𝒕
 
 <p align="center">
   <a href="https://t.me/Mecobots">
-    <img src="https://img.shields.io/badge/Join-Developer%20Home-2E64FE?style=for-the-badge&logo=telegram&logoColor=white" alt="Developer Home">
+    <img src="https://img.shields.io/badge/Join-Developer%20Home-2563EB?style=for-the-badge&logo=telegram&logoColor=white" alt="Developer Home">
   </a>
   <a href="https://t.me/Spparow_92">
     <img src="https://img.shields.io/badge/Contact%20Owner-%40Spparow__92-0088cc?style=for-the-badge&logo=telegram&logoColor=white" alt="Contact Owner">
   </a>
   <a href="https://t.me/MusicSp1_bot">
-    <img src="https://img.shields.io/badge/Demo%20Bot-%40MusicSp1__bot-26A5E4?style=for-the-badge&logo=telegram&logoColor=white" alt="Demo Bot">
+    <img src="https://img.shields.io/badge/Demo%20Bot-%40MusicSp1__bot-06B6D4?style=for-the-badge&logo=telegram&logoColor=white" alt="Demo Bot">
   </a>
+</p>
+
+<p align="center">
+  <sub>✨ <b>MusicSp</b> — Crafted with excellence for Telegram voice & video streaming communities.</sub>
 </p>
