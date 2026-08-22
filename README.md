@@ -99,34 +99,23 @@
 
 ---
 
-### 🛠️ 𝑶𝒕𝒉𝒆𝒓 𝑫𝒆𝒑𝒍𝒐𝒚𝒎𝒆𝒏𝒕 𝑮𝒖𝒊𝒅𝒆𝒔 (Click to Expand)
+### 🐧 𝑼𝒃𝒖𝒏𝒕𝒖 / 𝑫𝒆𝒃𝒊𝒂𝒏 𝑽𝑷𝑺 𝑫𝒆𝒑𝒍𝒐𝒚𝒎𝒆𝒏𝒕 (.𝒗𝒆𝒏𝒗 𝑨𝒖𝒕𝒐𝒎𝒂𝒕𝒆𝒅)
 
-<details>
-<summary><b>🐧 𝑼𝒃𝒖𝒏𝒕𝒖 / 𝑫𝒆𝒃𝒊𝒂𝒏 𝑽𝑷𝑺 𝑫𝒆𝒑𝒍𝒐𝒚𝒎𝒆𝒏𝒕 (.𝒗𝒆𝒏𝒗 𝑨𝒖𝒕𝒐𝒎𝒂𝒕𝒆𝒅)</b></summary>
-<br>
-
-MusicSp includes automated environment setup scripts (`setup` & `start`) that configure an isolated Python virtual environment (`.venv`) to completely prevent Ubuntu 24.04 PEP 668 restrictions:
+> ⚡ **Zero-Error VPS Setup**: Automated `.venv` virtual environment management prevents Ubuntu 24.04 PEP 668 issues.
 
 ```bash
-# 1. Update and upgrade system packages
 sudo apt-get update && sudo apt-get upgrade -y
-
-# 2. Clone the MusicSp repository
 git clone https://github.com/DevloperSP/MusicSp
 cd MusicSp
-
-# 3. Run automated setup installer (Creates .venv & installs all dependencies)
 bash setup
-
-# 4. Configure your environment variables
 cp sample.env .env
 vi .env
-
-# 5. Launch the MusicSp bot
 bash start
 ```
 
-</details>
+---
+
+### 🛠️ 𝑴𝒐𝒓𝒆 𝑫𝒆𝒑𝒍𝒐𝒚𝒎𝒆𝒏𝒕 𝑶𝒑𝒕𝒊𝒐𝒏𝒔 (Click to Expand)
 
 <details>
 <summary><b>🐳 𝑫𝒐𝒄𝒌𝒆𝒓 𝑪𝒐𝒏𝒕𝒂𝒊𝒏𝒆𝒓 𝑫𝒆𝒑𝒍𝒐𝒚𝒎𝒆𝒏𝒕</b></summary>
