@@ -99,19 +99,43 @@
 
 ---
 
-### 🐧 𝑼𝒃𝒖𝒏𝒕𝒖 / 𝑫𝒆𝒃𝒊𝒂𝒏 𝑽𝑷𝑺 𝑫𝒆𝒑𝒍𝒐𝒚𝒎𝒆𝒏𝒕 (.𝒗𝒆𝒏𝒗 𝑨𝒖𝒕𝒐𝒎𝒂𝒕𝒆𝒅)
+### 🚀 𝑽𝑷𝑺 𝑫𝒆𝒑𝒍𝒐𝒚𝒎𝒆𝒏𝒕
 
-> ⚡ **Zero-Error VPS Setup**: Automated `.venv` virtual environment management prevents Ubuntu 24.04 PEP 668 issues.
+<details>
+<summary><b>⚡ 𝑽𝒊𝒆𝒘 𝑽𝑷𝑺 𝑫𝒆𝒑𝒍𝒐𝒚𝒎𝒆𝒏𝒕 𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔 (Click Here)</b></summary>
+<br>
 
+#### 🔹 𝑺𝒕𝒆𝒑 𝟏: 𝑼𝒑𝒅𝒂𝒕𝒆 & 𝑼𝒑𝒈𝒓𝒂𝒅𝒆 𝑺𝒚𝒔𝒕𝒆𝒎
 ```bash
 sudo apt-get update && sudo apt-get upgrade -y
+```
+
+#### 🔹 𝑺𝒕𝒆𝒑 𝟐: 𝑪𝒍𝒐𝒏𝒆 𝑴𝒖𝒔𝒊𝒄𝑺𝒑 𝑹𝒆𝒑𝒐𝒔𝒊𝒕𝒐𝒓𝒚
+```bash
 git clone https://github.com/DevloperSP/MusicSp
+```
+
+#### 🔹 𝑺𝒕𝒆𝒑 𝟑: 𝑬𝒏𝒕𝒆𝒓 𝑹𝒆𝒑𝒐𝒔𝒊𝒕𝒐𝒓𝒚 𝑫𝒊𝒓𝒆𝒄𝒕𝒐𝒓𝒚
+```bash
 cd MusicSp
+```
+
+#### 🔹 𝑺𝒕𝒆𝒑 𝟒: 𝑹𝒖𝒏 𝑨𝒖𝒕𝒐𝒎𝒂𝒕𝒆𝒅 𝑺𝒆𝒕𝒖𝒑 𝑰𝒏𝒔𝒕𝒂𝒍𝒍𝒆𝒓
+```bash
 bash setup
-cp sample.env .env
-vi .env
+```
+
+#### 🔹 𝑺𝒕𝒆𝒑 𝟓: 𝑪𝒐𝒏𝒇𝒊𝒈𝒖𝒓𝒆 𝑬𝒏𝒗𝒊𝒓𝒐𝒏𝒎𝒆𝒏𝒕 𝑽𝒂𝒓𝒊𝒂𝒃𝒍𝒆𝒔
+```bash
+cp sample.env .env && vi .env
+```
+
+#### 🔹 𝑺𝒕𝒆𝒑 𝟔: 𝑺𝒕𝒂𝒓𝒕 𝑴𝒖𝒔𝒊𝒄𝑺𝒑 𝑩𝒐𝒕
+```bash
 bash start
 ```
+
+</details>
 
 ---
 
