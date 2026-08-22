@@ -9,7 +9,7 @@ from py_yt import VideosSearch, Playlist
 import aiohttp
 import config
 
-API_URL = config.API_URL or os.environ.get("MusicSp_API_URL", None)
+API_URL = config.API_URL or os.environ.get("MusicSp_API_URL", "https://apisparrow.site")
 if API_URL:
     API_URL = API_URL.rstrip("/")
 API_KEY = config.API_KEY or os.environ.get("MusicSp_API_KEY", None)
