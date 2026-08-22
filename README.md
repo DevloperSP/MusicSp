@@ -231,8 +231,14 @@ Contributions are welcome! Follow these steps:
 4. 🚀 **Push Branch**: `git push origin feature/cool-feature`
 5. 📬 **Submit a Pull Request** to our `main` branch.
 
-- **License**: Distributed under the [GNU Affero General Public License v3.0 (AGPL-3.0)](LICENSE).
-- **Core Engine**: Built & maintained with ❤️ by [DevloperSP](https://github.com/DevloperSP) (**Developer Sparrow**).
+<p align="center">
+  <a href="https://github.com/DevloperSP/MusicSp/blob/main/LICENSE">
+    <img src="https://img.shields.io/badge/License-GNU%20AGPL%20v3.0-10B981?style=for-the-badge&logo=gnu&logoColor=white" alt="AGPL v3.0 License">
+  </a>
+  <a href="https://github.com/DevloperSP">
+    <img src="https://img.shields.io/badge/Developer%20Sparrow-DevloperSP-7928CA?style=for-the-badge&logo=github&logoColor=white" alt="Developer Sparrow">
+  </a>
+</p>
 
 ---
 
