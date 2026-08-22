@@ -224,28 +224,6 @@ graph LR
 
 ---
 
-## ❓ 𝑭𝒓𝒆𝒒𝒖𝒆𝒏𝒕𝒍𝒚 𝑨𝒔𝒌𝒆𝒅 𝑸𝒖𝒆𝒔𝒕𝒊𝒐𝒏𝒔
-
-<details>
-<summary><b>1. How does MusicSp solve the Ubuntu 24.04 PEP 668 error?</b></summary>
-<br>
-Modern Linux systems enforce PEP 668 to protect system Python packages. MusicSp's <code>bash setup</code> automatically creates and manages an isolated <code>.venv</code> virtual environment, and <code>bash start</code> executes the bot via <code>.venv/bin/python</code>.
-</details>
-
-<details>
-<summary><b>2. Why is the Assistant account not joining the Voice Chat?</b></summary>
-<br>
-Ensure the Assistant account (from <code>STRING_SESSION</code>) has joined the group, the group voice chat is already started, and the bot has permissions to invite users and manage voice chats.
-</details>
-
-<details>
-<summary><b>3. Can I use custom cookies or YouTube download APIs?</b></summary>
-<br>
-Yes! You can configure <code>API_URL</code> and <code>API_KEY</code> in your <code>.env</code> file for lightning-fast external audio resolution without hitting server rate-limits.
-</details>
-
----
-
 ## 🤝 𝑪𝒐𝒏𝒕𝒓𝒊𝒃𝒖𝒕𝒊𝒐𝒏 & 𝑳𝒊𝒄𝒆𝒏𝒔𝒆
 
 Contributions are welcome! Follow these steps:
