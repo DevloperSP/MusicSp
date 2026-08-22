@@ -250,6 +250,6 @@ Contributions are welcome! Follow these steps:
   </a>
 </p>
 
-<p align="center">
-  <sub>✨ <b>MusicSp</b> — Crafted with excellence for Telegram voice & video streaming communities.</sub>
-</p>
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=17&duration=3800&pause=1000&color=00F2FE&center=true&vCenter=true&width=850&lines=%E2%9C%A8+MusicSp+%E2%80%94+Crafted+with+excellence+for+Telegram+voice+%26+video+streaming+communities.;%E2%9A%A1+Fast%2C+Reliable+%26+Secure+%E2%80%94+Join+our+community+%40Mecobots!;%F0%9F%9A%80+Powered+by+Developer+Sparrow+Engine+%E2%80%A2+24%2F7+Lossless+Streaming!">
+</div>
