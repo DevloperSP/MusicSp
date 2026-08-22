@@ -1,20 +1,12 @@
-<h1 align="center">
-  <img src=".assets/animated_title.svg" alt="MusicSp - Developer Sparrow" height="55">
-</h1>
-
 <p align="center">
-  <img src=".assets/social_preview.jpg" alt="MusicSp Telegram Music Bot Banner" width="100%" style="border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+  <img src=".assets/hero_banner.svg" width="100%" height="380" alt="MusicSp Animated Neon Audio Engine">
 </p>
 
-<p align="center">
-  <img src=".assets/equalizer.svg" width="50%" height="40" alt="Audio Equalizer Wave">
-</p>
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=26&duration=4000&pause=1000&color=00F2FE&center=true&vCenter=true&width=1000&lines=MusicSp+Repo+—+Lightning-Fast+Telegram+Music+Streaming!;Ultra-Low+Latency+Audio+%26+HD+Video+Voice+Chat+Engine!;Powered+by+Kurigram+%26+PyTgCalls+•+Developer+Sparrow+Core!">
+</div>
 
-<p align="center">
-  <b>✨ 𝑴𝒖𝒔𝒊𝒄𝑺𝒑 — 𝑵𝒆𝒙𝒕-𝑮𝒆𝒏 𝑻𝒆𝒍𝒆𝒈𝒓𝒂𝒎 𝑽𝒐𝒊𝒄𝒆 𝑪𝒉𝒂𝒕 𝑴𝒖𝒔𝒊𝒄 & 𝑽𝒊𝒅𝒆𝒐 𝑺𝒕𝒓𝒆𝒂𝒎𝒊𝒏𝒈 𝑬𝒏𝒈𝒊𝒏𝒆 🎶</b>
-  <br>
-  <i>⚡ 𝑷𝒐𝒘𝒆𝒓𝒆𝒅 𝒃𝒚 𝑷𝒚𝒕𝒉𝒐𝒏, 𝑲𝒖𝒓𝒊𝒈𝒓𝒂𝒎 & 𝑷𝒚𝑻𝒈𝑪𝒂𝒍𝒍𝒔 • 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓 𝑺𝒑𝒂𝒓𝒓𝒐𝒘 𝑪𝒐𝒓𝒆 🦅</i>
-</p>
+---
 
 <p align="center">
   <a href="https://github.com/DevloperSP/MusicSp/stargazers"><img src="https://img.shields.io/github/stars/DevloperSP/MusicSp?style=for-the-badge&color=2563EB" alt="GitHub Stars"></a>
@@ -23,6 +15,12 @@
   <a href="https://python.org"><img src="https://img.shields.io/badge/Python-3.10%20%7C%203.12-F59E0B?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
   <a href="https://t.me/Mecobots"><img src="https://img.shields.io/badge/Telegram-Community-06B6D4?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram Community"></a>
 </p>
+
+<div align="center">
+
+> ⚡ **Response Speed:** `1-2 Seconds` | 🚀 **Uptime:** `99.9% High Availability` | 💎 **Audio Quality:** `Lossless 320kbps + 1080p HD Video`
+
+</div>
 
 ---
 

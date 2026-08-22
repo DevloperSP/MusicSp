@@ -1,0 +1,131 @@
+<svg width="100%" height="380" viewBox="0 0 900 380" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Radial Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#0f0c29"/>
+      <stop offset="50%" stop-color="#08071a"/>
+      <stop offset="100%" stop-color="#020208"/>
+    </radialGradient>
+
+    <!-- Glowing Text & Neon Gradient -->
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="50%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#9d4edd"/>
+    </linearGradient>
+
+    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="50%" stop-color="#7928ca"/>
+      <stop offset="100%" stop-color="#ff0080"/>
+    </linearGradient>
+
+    <!-- Soft Neon Glow Filter -->
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="particleGlow">
+      <feGaussianBlur stdDeviation="2" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulseCard {
+      0%, 100% { stroke-opacity: 0.7; filter: drop-shadow(0 0 10px rgba(0, 242, 254, 0.4)); }
+      50% { stroke-opacity: 1.0; filter: drop-shadow(0 0 22px rgba(157, 78, 221, 0.85)); }
+    }
+    @keyframes pulseRing {
+      0%, 100% { transform: scale(1); opacity: 0.4; }
+      50% { transform: scale(1.08); opacity: 0.85; }
+    }
+    @keyframes floatParticle {
+      0%, 100% { transform: translateY(0px) scale(1); opacity: 0.3; }
+      50% { transform: translateY(-14px) scale(1.3); opacity: 1; }
+    }
+    @keyframes eqBounce {
+      0% { transform: scaleY(0.12); }
+      50% { transform: scaleY(0.96); }
+      100% { transform: scaleY(0.28); }
+    }
+    .glass-card {
+      animation: pulseCard 4s ease-in-out infinite;
+    }
+    .center-ring {
+      transform-origin: 450px 190px;
+      animation: pulseRing 5s ease-in-out infinite;
+    }
+    .particle {
+      animation: floatParticle 3.5s ease-in-out infinite;
+    }
+    .eq-bar {
+      transform-origin: bottom;
+      animation: eqBounce 1.2s ease-in-out infinite alternate;
+    }
+  </style>
+
+  <!-- Background Canvas -->
+  <rect width="900" height="380" rx="16" fill="url(#bgGrad)" stroke="#1a1a3a" stroke-width="1.5"/>
+
+  <!-- Floating Particles -->
+  <circle class="particle" cx="130" cy="85" r="3" fill="#00f2fe" filter="url(#particleGlow)" style="animation-delay: 0.2s;"/>
+  <circle class="particle" cx="200" cy="290" r="4" fill="#9d4edd" filter="url(#particleGlow)" style="animation-delay: 1.1s;"/>
+  <circle class="particle" cx="740" cy="75" r="3.5" fill="#00f2fe" filter="url(#particleGlow)" style="animation-delay: 0.7s;"/>
+  <circle class="particle" cx="800" cy="300" r="2.5" fill="#4facfe" filter="url(#particleGlow)" style="animation-delay: 1.8s;"/>
+  <circle class="particle" cx="450" cy="45" r="3" fill="#ff0080" filter="url(#particleGlow)" style="animation-delay: 2.2s;"/>
+
+  <!-- Center Decorative Glow Rings -->
+  <circle class="center-ring" cx="450" cy="190" r="105" fill="none" stroke="url(#neonGrad)" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.6"/>
+  <circle class="center-ring" cx="450" cy="190" r="85" fill="none" stroke="url(#cardBorder)" stroke-width="1" stroke-dasharray="4 4" opacity="0.4" style="animation-delay: -2s;"/>
+
+  <!-- Left Equalizer Group -->
+  <g transform="translate(0, 0)">
+    <g transform="translate(180, 230)">
+      <rect class="eq-bar" x="0" y="-80" width="8" height="80" rx="4" fill="#00f2fe" style="animation-delay: 0.1s; animation-duration: 0.9s;"/>
+      <rect class="eq-bar" x="14" y="-80" width="8" height="80" rx="4" fill="#2563eb" style="animation-delay: 0.4s; animation-duration: 1.1s;"/>
+      <rect class="eq-bar" x="28" y="-80" width="8" height="80" rx="4" fill="#7928ca" style="animation-delay: 0.2s; animation-duration: 0.8s;"/>
+      <rect class="eq-bar" x="42" y="-80" width="8" height="80" rx="4" fill="#9d4edd" style="animation-delay: 0.6s; animation-duration: 1.3s;"/>
+      <rect class="eq-bar" x="56" y="-80" width="8" height="80" rx="4" fill="#00f2fe" style="animation-delay: 0.3s; animation-duration: 1.0s;"/>
+      <rect class="eq-bar" x="70" y="-80" width="8" height="80" rx="4" fill="#4facfe" style="animation-delay: 0.7s; animation-duration: 0.9s;"/>
+    </g>
+  </g>
+
+  <!-- Right Equalizer Group -->
+  <g transform="translate(0, 0)">
+    <g transform="translate(640, 230)">
+      <rect class="eq-bar" x="0" y="-80" width="8" height="80" rx="4" fill="#4facfe" style="animation-delay: 0.7s; animation-duration: 0.9s;"/>
+      <rect class="eq-bar" x="14" y="-80" width="8" height="80" rx="4" fill="#00f2fe" style="animation-delay: 0.3s; animation-duration: 1.0s;"/>
+      <rect class="eq-bar" x="28" y="-80" width="8" height="80" rx="4" fill="#9d4edd" style="animation-delay: 0.6s; animation-duration: 1.2s;"/>
+      <rect class="eq-bar" x="42" y="-80" width="8" height="80" rx="4" fill="#7928ca" style="animation-delay: 0.2s; animation-duration: 0.9s;"/>
+      <rect class="eq-bar" x="56" y="-80" width="8" height="80" rx="4" fill="#2563eb" style="animation-delay: 0.5s; animation-duration: 1.1s;"/>
+      <rect class="eq-bar" x="70" y="-80" width="8" height="80" rx="4" fill="#00f2fe" style="animation-delay: 0.1s; animation-duration: 0.8s;"/>
+    </g>
+  </g>
+
+  <!-- Central Glassmorphism Card -->
+  <rect class="glass-card" x="270" y="115" width="360" height="150" rx="24" fill="#09081f" fill-opacity="0.82" stroke="url(#cardBorder)" stroke-width="2"/>
+
+  <!-- Card Brand Title -->
+  <text x="450" y="178" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="46" font-weight="900" text-anchor="middle" fill="url(#neonGrad)" filter="url(#glow)" letter-spacing="3">
+    MusicSp
+  </text>
+
+  <!-- Card Subtitle -->
+  <text x="450" y="214" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="13" font-weight="700" text-anchor="middle" fill="#e2e8f0" letter-spacing="3" opacity="0.95">
+    PREMIUM VOICE &amp; VIDEO ENGINE
+  </text>
+
+  <!-- Core Sub-tag -->
+  <text x="450" y="238" font-family="'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle" fill="#00f2fe" letter-spacing="2" opacity="0.9">
+    • DEVELOPER SPARROW CORE •
+  </text>
+</svg>
