@@ -83,25 +83,23 @@
 
 ---
 
-## 🚀 𝑫𝒆𝒑𝒍𝒐𝒚𝒎𝒆𝒏𝒕 𝑮𝒖𝒊𝒅𝒆𝒔 (𝑪𝒍𝒊𝒄𝒌 𝒕𝒐 𝑬𝒙𝒑𝒂𝒏𝒅)
+## 🚀 𝑫𝒆𝒑𝒍𝒐𝒚𝒎𝒆𝒏𝒕 𝑴𝒆𝒕𝒉𝒐𝒅𝒔
 
-<details>
-<summary><b>🟣 𝑶𝒏𝒆-𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒐𝒌𝒖 𝑫𝒆𝒑𝒍𝒐𝒚𝒎𝒆𝒏𝒕</b></summary>
-<br>
-
-Deploy **MusicSp** instantly on Heroku with pre-configured buildpacks:
+### 🟣 𝑶𝒏𝒆-𝑪𝒍𝒊𝒄𝒌 𝑯𝒆𝒓𝒐𝒌𝒖 𝑫𝒆𝒑𝒍𝒐𝒚𝒎𝒆𝒏𝒕
 
 <p align="center">
   <a href="https://dashboard.heroku.com/new?template=https://github.com/DevloperSP/MusicSp">
-    <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku">
+    <img src="https://img.shields.io/badge/Deploy%20On%20Heroku-7928CA?style=for-the-badge&logo=heroku&logoColor=white" alt="Deploy on Heroku Badge">
+  </a>
+  <br><br>
+  <a href="https://dashboard.heroku.com/new?template=https://github.com/DevloperSP/MusicSp">
+    <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku Button">
   </a>
 </p>
 
-1. Click the **Deploy to Heroku** button above.
-2. Enter your `API_ID`, `API_HASH`, `BOT_TOKEN`, `MONGO_DB_URI`, `OWNER_ID`, `LOG_GROUP_ID`, and `STRING_SESSION`.
-3. Click **Deploy App** and turn on the worker dyno in your dashboard.
+---
 
-</details>
+### 🛠️ 𝑶𝒕𝒉𝒆𝒓 𝑫𝒆𝒑𝒍𝒐𝒚𝒎𝒆𝒏𝒕 𝑮𝒖𝒊𝒅𝒆𝒔 (Click to Expand)
 
 <details>
 <summary><b>🐧 𝑼𝒃𝒖𝒏𝒕𝒖 / 𝑫𝒆𝒃𝒊𝒂𝒏 𝑽𝑷𝑺 𝑫𝒆𝒑𝒍𝒐𝒚𝒎𝒆𝒏𝒕 (.𝒗𝒆𝒏𝒗 𝑨𝒖𝒕𝒐𝒎𝒂𝒕𝒆𝒅)</b></summary>
