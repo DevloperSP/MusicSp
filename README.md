@@ -26,40 +26,6 @@
 
 ---
 
-## 🌟 𝑷𝒓𝒐𝒋𝒆𝒄𝒕 𝑶𝒗𝒆𝒓𝒗𝒊𝒆𝒘
-
-**MusicSp** *(also known across Telegram as **Sparrow Music Bot** / **Developer Sparrow Core**)* is a modern, ultra-fast, open-source streaming bot engineered in **Python 3**. It harnesses the asynchronous speed of **Kurigram / Pyrogram** for Telegram MTProto communication and **PyTgCalls (WebRTC)** for high-fidelity audio and crystal-clear HD video streaming directly in Telegram Voice Chats, Supergroups, and Channel Live Streams.
-
-Designed for peak stability and seamless user experience, MusicSp features multi-source music streaming (YouTube, Spotify, Apple Music, SoundCloud, Resso, Telegram Direct Files), interactive colorful inline buttons with custom emoji support, intelligent multi-assistant load distribution, and async MongoDB storage.
-
----
-
-## 💎 𝑲𝒆𝒚 𝑭𝒆𝒂𝒕𝒖𝒓𝒆𝒔 & 𝑪𝒂𝒑𝒂𝒃𝒊𝒍𝒊𝒕𝒊𝒆𝒔
-
-- 🎧 **Multi-Source Streaming**: Stream audio and videos seamlessly from YouTube, Spotify, Apple Music, SoundCloud, Resso, and direct Telegram audio/video documents.
-- 📹 **Dual Audio & HD Video Modes**: Effortlessly toggle between voice chat audio streaming (`/play`) and high-definition video chat broadcasting (`/vplay`).
-- 🎨 **Colourful Interactive UI**: Custom inline buttons styled with Kurigram `ButtonStyle` (Primary, Success, Danger) and premium custom emoji animations.
-- ⚡ **Multi-Assistant Scaling**: Supports up to 5 assistant sessions (`STRING_SESSION` to `STRING_SESSION5`) for smooth load-balancing across multiple active chats.
-- 🎚️ **Live Stream Controls**: Real-time seeking (`/seek`), speed alteration (`/speed` from 0.5x to 2.0x), track loop (`/loop`), and random queue shuffle (`/shuffle`).
-- 📜 **Smart Queue & Playlist Management**: Queuing engine with track search slider, personal saved playlist management (`/playlist`), and live queue inspection (`/queue`).
-- 🌐 **Multilingual Engine**: Native support for multiple international languages with instant language selection (`/lang`).
-- 🛡️ **Fail-Safe & Crash-Proof**: Fully asynchronous architecture backed by Motor MongoDB, isolated virtual environment (`.venv`) support, and resilient network failover.
-
----
-
-## 🎧 𝑺𝒖𝒑𝒑𝒐𝒓𝒕𝒆𝒅 𝑴𝒖𝒔𝒊𝒄 & 𝑽𝒊𝒅𝒆𝒐 𝑺𝒐𝒖𝒓𝒄𝒆𝒔
-
-| 📻 Platform | 🎵 Audio Stream | 📺 Video Stream | 📑 Playlist Support | 🔍 Input Method |
-| :--- | :---: | :---: | :---: | :--- |
-| **YouTube** | ✅ | ✅ | ✅ | Direct Link, Playlist Link, Song Title Search |
-| **Spotify** | ✅ | ❌ | ✅ | Track Link, Album Link, Playlist Link, Artist Link |
-| **Apple Music** | ✅ | ❌ | ✅ | Song Link, Playlist Link |
-| **SoundCloud** | ✅ | ❌ | ❌ | Track Link |
-| **Resso** | ✅ | ❌ | ❌ | Track Link |
-| **Telegram Media** | ✅ | ✅ | ❌ | Audio Files, Video Files, Voice Notes, Documents |
-
----
-
 ## 🎛️ 𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔 & 𝑼𝒔𝒂𝒈𝒆 𝑴𝒂𝒏𝒖𝒂𝒍
 
 <details>
