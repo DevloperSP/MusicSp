@@ -31,6 +31,8 @@ def install_req(cmd: str) -> Tuple[str, str, int, int]:
 
 def git():
     REPO_LINK = config.UPSTREAM_REPO
+    if not REPO_LINK:
+        return
     if config.GIT_TOKEN:
         GIT_USERNAME = REPO_LINK.split("com/")[1].split("/")[0]
         TEMP_REPO = REPO_LINK.split("https://")[1]
@@ -43,29 +45,51 @@ def git():
     except GitCommandError:
         LOGGER(__name__).info(f"Invalid Git Command")
     except InvalidGitRepositoryError:
-        repo = Repo.init()
-        if "origin" in repo.remotes:
-            origin = repo.remote("origin")
-        else:
-            origin = repo.create_remote("origin", UPSTREAM_REPO)
-        origin.fetch()
-        repo.create_head(
-            config.UPSTREAM_BRANCH,
-            origin.refs[config.UPSTREAM_BRANCH],
-        )
-        repo.heads[config.UPSTREAM_BRANCH].set_tracking_branch(
-            origin.refs[config.UPSTREAM_BRANCH]
-        )
-        repo.heads[config.UPSTREAM_BRANCH].checkout(True)
         try:
-            repo.create_remote("origin", config.UPSTREAM_REPO)
-        except BaseException:
-            pass
-        nrs = repo.remote("origin")
-        nrs.fetch(config.UPSTREAM_BRANCH)
-        try:
-            nrs.pull(config.UPSTREAM_BRANCH)
-        except GitCommandError:
-            repo.git.reset("--hard", "FETCH_HEAD")
-        install_req("pip3 install --no-cache-dir -r requirements.txt")
-        LOGGER(__name__).info(f"Fetching updates from upstream repository...")
+            repo = Repo.init()
+            if "origin" in repo.remotes:
+                origin = repo.remote("origin")
+            else:
+                origin = repo.create_remote("origin", UPSTREAM_REPO)
+            origin.fetch()
+            
+            branch = config.UPSTREAM_BRANCH or "main"
+            available_refs = [ref.name.split("/")[-1] for ref in origin.refs]
+            
+            if branch not in available_refs:
+                if "main" in available_refs:
+                    branch = "main"
+                elif "master" in available_refs:
+                    branch = "master"
+                elif len(available_refs) > 0:
+                    branch = available_refs[0]
+
+            ref_target = None
+            if branch in origin.refs:
+                ref_target = origin.refs[branch]
+            elif f"origin/{branch}" in origin.refs:
+                ref_target = origin.refs[f"origin/{branch}"]
+            elif len(origin.refs) > 0:
+                ref_target = origin.refs[0]
+
+            if ref_target is not None:
+                if branch not in repo.heads:
+                    repo.create_head(branch, ref_target)
+                repo.heads[branch].set_tracking_branch(ref_target)
+                repo.heads[branch].checkout(True)
+                
+            try:
+                repo.create_remote("origin", config.UPSTREAM_REPO)
+            except BaseException:
+                pass
+            nrs = repo.remote("origin")
+            nrs.fetch(branch)
+            try:
+                nrs.pull(branch)
+            except GitCommandError:
+                repo.git.reset("--hard", "FETCH_HEAD")
+            LOGGER(__name__).info(f"Fetching updates from upstream repository...")
+        except Exception as e:
+            LOGGER(__name__).warning(f"Git auto-sync warning (continuing boot): {e}")
+    except Exception as e:
+        LOGGER(__name__).warning(f"Git setup skipped: {e}")
