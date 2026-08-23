@@ -2,8 +2,13 @@ import asyncio
 import shlex
 from typing import Tuple
 
-from git import Repo
-from git.exc import GitCommandError, InvalidGitRepositoryError
+try:
+    from git import Repo
+    from git.exc import GitCommandError, InvalidGitRepositoryError
+except ImportError:
+    Repo = None
+    GitCommandError = Exception
+    InvalidGitRepositoryError = Exception
 
 import config
 
@@ -30,6 +35,8 @@ def install_req(cmd: str) -> Tuple[str, str, int, int]:
 
 
 def git():
+    if Repo is None:
+        return
     REPO_LINK = config.UPSTREAM_REPO
     if not REPO_LINK:
         return

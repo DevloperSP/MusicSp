@@ -1,3 +1,4 @@
+import asyncio
 import sys
 
 # ✅ 1. Install uvloop (if available) BEFORE setting the event loop
