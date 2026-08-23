@@ -27,6 +27,87 @@ from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
 from pytgcalls.types.input_stream.quality import HighQualityAudio, MediumQualityVideo
 from pytgcalls.types.stream import StreamAudioEnded
 
+# Monkey-patch pytgcalls PyrogramClient.on_update to prevent AttributeError: 'UpdateGroupCall' object has no attribute 'chat_id'
+try:
+    import json
+    from pyrogram.raw.types import (
+        GroupCall,
+        GroupCallDiscarded,
+        UpdateGroupCall,
+        UpdateGroupCallConnection,
+        UpdateGroupCallParticipants,
+    )
+    from pytgcalls.mtproto.pyrogram_client import PyrogramClient
+
+    _orig_on_update = PyrogramClient.on_update
+
+    async def _safe_on_update(self, client, update, users, chats):
+        try:
+            data2 = {}
+            for chat in chats.values():
+                data2[chat.id] = chat.id
+            if isinstance(update, UpdateGroupCallConnection):
+                if hasattr(self, "_group_call") and self._group_call is not None and hasattr(self._group_call, "call"):
+                    await self._app.handle_update(
+                        self._group_call.call.id,
+                        json.loads(update.params.data),
+                    )
+            elif isinstance(update, UpdateGroupCall):
+                call_id = getattr(getattr(update, "call", None), "id", None)
+                if isinstance(getattr(update, "call", None), GroupCallDiscarded):
+                    if self._group_call is not None and hasattr(self._group_call, "call") and self._group_call.call.id == call_id:
+                        await self._app.handle_update(
+                            self._group_call.call.id,
+                            None,
+                        )
+                else:
+                    raw_chat_id = getattr(update, "chat_id", None)
+                    if raw_chat_id is not None and raw_chat_id in data2:
+                        chat_id = self.chat_id(data2[raw_chat_id])
+                    elif hasattr(self, "_group_call") and self._group_call is not None and hasattr(self._group_call, "chat_id"):
+                        chat_id = self._group_call.chat_id
+                    else:
+                        chat_id = None
+
+                    if (
+                        self._group_call is not None
+                        and hasattr(self._group_call, "call")
+                        and self._group_call.call.id == call_id
+                    ):
+                        self._group_call.call = update.call
+                        await self._app.handle_update(
+                            self._group_call.call.id,
+                            self._group_call.call,
+                            chat_id,
+                        )
+            elif isinstance(update, UpdateGroupCallParticipants):
+                call_id = getattr(getattr(update, "call", None), "id", None)
+                if (
+                    self._group_call is not None
+                    and hasattr(self._group_call, "call")
+                    and self._group_call.call.id == call_id
+                ):
+                    raw_chat_id = getattr(update, "chat_id", None)
+                    if raw_chat_id is not None and raw_chat_id in data2:
+                        chat_id = self.chat_id(data2[raw_chat_id])
+                    elif hasattr(self, "_group_call") and self._group_call is not None and hasattr(self._group_call, "chat_id"):
+                        chat_id = self._group_call.chat_id
+                    else:
+                        chat_id = None
+                    await self._app.handle_update(
+                        self._group_call.call.id,
+                        update.participants,
+                        chat_id,
+                    )
+            else:
+                await _orig_on_update(self, client, update, users, chats)
+        except Exception:
+            pass
+
+    PyrogramClient.on_update = _safe_on_update
+except Exception:
+    pass
+
 import config
 from MusicSp import LOGGER, YouTube, app
 from MusicSp.misc import db
