@@ -36,6 +36,9 @@ except ModuleNotFoundError:
         pass
 
 
+# Apply PyTgCalls MTProto compatibility patches
+import MusicSp.core.patch
+
 # --- Original bot imports ---
 from MusicSp.core.bot import DevSp
 from MusicSp.core.dir import dirr
