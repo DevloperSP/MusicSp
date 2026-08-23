@@ -102,7 +102,9 @@
 ### 🚀 𝑽𝑷𝑺 𝑫𝒆𝒑𝒍𝒐𝒚𝒎𝒆𝒏𝒕
 
 <details>
-<summary><b>⚡ 𝑽𝒊𝒆𝒘 𝑽𝑷𝑺 𝑫𝒆𝒑𝒍𝒐𝒚𝒎𝒆𝒏𝒕 𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔 (Click Here)</b></summary>
+<summary align="center">
+  <b><font color="#1E90FF" size="3">⚡ 𝑽𝒊𝒆𝒘 𝑽𝑷𝑺 𝑫𝒆𝒑𝒍𝒐𝒚𝒎𝒆𝒏𝒕 𝑪𝒐𝒎𝒎𝒂𝒏𝒅𝒔 (Click Here) ⚡</font></b>
+</summary>
 <br>
 
 #### 🔹 𝑺𝒕𝒆𝒑 𝟏: 𝑼𝒑𝒅𝒂𝒕𝒆 & 𝑼𝒑𝒈𝒓𝒂𝒅𝒆 𝑺𝒚𝒔𝒕𝒆𝒎
