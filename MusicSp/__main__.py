@@ -62,11 +62,10 @@ async def init():
     try:
         await DevSp.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
     except NoActiveGroupCall:
-        LOGGER("MusicSp").error(
-            "Please turn on the videochat of your log group\channel.\n\nStopping Bot..."
+        LOGGER("MusicSp").warning(
+            "Videochat not active in log group. Bot is ready to join group voice chats on command."
         )
-        exit()
-    except:
+    except Exception:
         pass
     await DevSp.decorators()
     LOGGER("MusicSp").info(
