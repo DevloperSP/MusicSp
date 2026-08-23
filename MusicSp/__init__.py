@@ -1,18 +1,23 @@
-import asyncio
+import sys
 
-# ✅ Fix for uvloop / event loop issue on Heroku (Python 3.10+)
+# ✅ 1. Install uvloop (if available) BEFORE setting the event loop
+if sys.platform != "win32":
+    try:
+        import uvloop
+        uvloop.install()
+    except (ImportError, Exception):
+        pass
+
+# ✅ 2. Create and set an active event loop in MainThread for PyTgCalls sync compatibility
 try:
-    asyncio.get_running_loop()
+    loop = asyncio.get_event_loop()
 except RuntimeError:
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
-
-# Optional but recommended if you still use uvloop
-try:
-    import uvloop
-    uvloop.install()
-except ImportError:
-    pass
+else:
+    if loop.is_closed():
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
 
 # Ensure pytgcalls is importable across all environments (Heroku, VPS, Containers)
 try:

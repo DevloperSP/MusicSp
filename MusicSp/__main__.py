@@ -1,4 +1,24 @@
 import asyncio
+import sys
+
+# Ensure uvloop and event loop are configured BEFORE importing pytgcalls or plugins
+if sys.platform != "win32":
+    try:
+        import uvloop
+        uvloop.install()
+    except (ImportError, Exception):
+        pass
+
+try:
+    loop = asyncio.get_event_loop()
+except RuntimeError:
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+else:
+    if loop.is_closed():
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+
 import importlib
 
 from pyrogram import idle
