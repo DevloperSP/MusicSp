@@ -21,6 +21,7 @@ heroku3
 
 # --- Telegram & Media libs ---
 kurigram>=2.2.17
+py-tgcalls==0.9.7; python_version < "3.12"
 ntgcalls==1.0.4
 spotipy
 unidecode
